@@ -18,7 +18,8 @@ var EmployeeComponent = (function () {
 EmployeeComponent = __decorate([
     core_1.Component({
         selector: 'my-employee',
-        templateUrl: 'app/employee/employee.component.html'
+        templateUrl: 'app/employee/employee.component.html',
+        styleUrls: ['app/employee/employee.component.css']
     })
 ], EmployeeComponent);
 exports.EmployeeComponent = EmployeeComponent;
