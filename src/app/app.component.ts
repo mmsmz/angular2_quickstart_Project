@@ -8,7 +8,7 @@ import {Component}  from "@angular/core";
                 <!-- <h1> {{10+20+30}} </h1> -->
                 <!-- using ternary operator-->
                 <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> 
-                <img src='{{imagePath}}' />
+                <img [src]='imagePath' />
                 <h1> {{ getFullName()}} </h1> 
                 <my-employee></my-employee>
              </div>`
@@ -20,8 +20,8 @@ export class AppComponent {
   firstName : string = 'Tom';
   lastName : string = 'Sammy';
 
-
   getFullName(): string{
       return this.firstName + " " + this.lastName;
   }
+  
 }

@@ -21,7 +21,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n             <div>\n                <!-- <h1> {{'Page Header ' + pageHeader}} </h1> -->\n                <!-- <h1> {{10+20+30}} </h1> -->\n                <!-- using ternary operator-->\n                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> \n                <img src='{{imagePath}}' />\n                <h1> {{ getFullName()}} </h1> \n                <my-employee></my-employee>\n             </div>"
+        template: "\n             <div>\n                <!-- <h1> {{'Page Header ' + pageHeader}} </h1> -->\n                <!-- <h1> {{10+20+30}} </h1> -->\n                <!-- using ternary operator-->\n                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> \n                <img [src]='imagePath' />\n                <h1> {{ getFullName()}} </h1> \n                <my-employee></my-employee>\n             </div>"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
