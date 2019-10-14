@@ -11,9 +11,14 @@ import {Component}  from "@angular/core";
                 <img [src]='imagePath' />
                 <h1> {{ getFullName()}} </h1> 
                 <my-employee></my-employee>
+                <button [disable]='isDisabled'>Click Me</button>
+                <button disable='{{isDisabled}}'>Click Me</button>
+
+                <input id='input' type='text value='Tom'>
              </div>`
 })
 export class AppComponent {
+  isdisabled: boolean = false;
   pageHeader : string = "Employee Details";
   imagePath : string = 'https://png.pngtree.com/element_our/sm/20180518/sm_5aff6089d3e02.png';
 
