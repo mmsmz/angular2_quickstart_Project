@@ -4,7 +4,13 @@
     <title>Page Title</title>
 </head>
 <body>
-    <table>
+    <table> 
+        <thead>
+            <th [attr.colspan]="columnSpan">
+                  Employee Details
+            </th>
+        </thead>
+        <tbody>
         <tr>
             <td>First Name</td>
             <td>{{firstname}}</td>
@@ -21,6 +27,7 @@
             <td>Age</td>
             <td>{{age}}</td>
         </tr>
+        </tbody>
     </table>
 </body>
 </html>
