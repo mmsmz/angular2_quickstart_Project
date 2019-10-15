@@ -8,22 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.pageHeader = "Employee Details";
-        this.imagePath = '20180518/sm_5aff6089d3e02.png';
+        // pageHeader : string = "Employee Details";
+        // imagePath : string = '20180518/sm_5aff6089d3e02.png';
         this.isDisabled = false;
-        this.badHtml = 'hello <script>alert("Hacked");</script> World';
-        this.firstName = 'Tom';
-        this.lastName = 'Sammy';
+        // badHtml: String = 'hello <script>alert("Hacked");</script> World'
+        // firstName : string = 'Tom';
+        // lastName : string = 'Sammy';
+        // getFullName(): string{
+        //     return this.firstName + " " + this.lastName;
+        // }
     }
-    AppComponent.prototype.getFullName = function () {
-        return this.firstName + " " + this.lastName;
-    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n             <div>\n                <!-- <h1> {{'Page Header ' + pageHeader}} </h1> -->\n                <!-- <h1> {{10+20+30}} </h1> -->\n                \n                <!-- using ternary operator\n                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> -->\n                <img src='https://png.pngtree.com/element_our/sm/{{imagePath}}' />\n                <h1> {{ getFullName()}} </h1> \n                <my-employee></my-employee>\n    \n                <!--<button [disabled]='isDisabled'>Click Me</button>-->\n                <button disabled='{{isDisabled}}'>Click Me</button>\n\n                <span bind-innerHtml='pageHeader'></span>\n\n                <div [innerHtml]='badHtml'>{{badHtml}}</div>\n             </div>"
+        template: "\n             <div>\n                <!-- <h1> {{'Page Header ' + pageHeader}} </h1> -->\n                <!-- <h1> {{10+20+30}} </h1> -->\n                \n                <!-- using ternary operator\n                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> \n                <img src='https://png.pngtree.com/element_our/sm/{{imagePath}}' />\n                <h1> {{ getFullName()}} </h1> \n                <my-employee></my-employee>\n                <button [disabled]='isDisabled'>Click Me</button>\n                <button disabled='{{isDisabled}}'>Click Me</button>\n                <span bind-innerHtml='pageHeader'></span>\n                <div [innerHtml]='badHtml'>{{badHtml}}</div>-->\n\n                 <input id='inputId' type='text' value='Tom'>\n\n\n             </div>"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
