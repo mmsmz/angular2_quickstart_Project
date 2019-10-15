@@ -6,21 +6,27 @@ import {Component}  from "@angular/core";
              <div>
                 <!-- <h1> {{'Page Header ' + pageHeader}} </h1> -->
                 <!-- <h1> {{10+20+30}} </h1> -->
-                <!-- using ternary operator-->
+                
+                <!-- using ternary operator
                 <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> 
-                <img [src]='imagePath' />
+                <img src='https://png.pngtree.com/element_our/sm/{{imagePath}}' />-->
                 <h1> {{ getFullName()}} </h1> 
                 <my-employee></my-employee>
-                <button [disable]='isDisabled'>Click Me</button>
-                <button disable='{{isDisabled}}'>Click Me</button>
+    
+                <!--<button [disabled]='isDisabled'>Click Me</button>-->
+                <button disabled='{{isDisabled}}'>Click Me</button>
 
-                <input id='input' type='text value='Tom'>
+                <span bind-innerHtml='pageHeader'></span>
+
+                <div [innerHtml]='badHtml'>{{badHtml}}</div>
              </div>`
 })
 export class AppComponent {
-  isdisabled: boolean = false;
+  
   pageHeader : string = "Employee Details";
-  imagePath : string = 'https://png.pngtree.com/element_our/sm/20180518/sm_5aff6089d3e02.png';
+  imagePath : string = '20180518/sm_5aff6089d3e02.png';
+  isDisabled: boolean = false;
+  badHtml: String = 'hello <script>alert("Hacked");</script> World'
 
   firstName : string = 'Tom';
   lastName : string = 'Sammy';
@@ -28,5 +34,5 @@ export class AppComponent {
   getFullName(): string{
       return this.firstName + " " + this.lastName;
   }
-  
+
 }
