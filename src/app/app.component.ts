@@ -8,8 +8,8 @@ import {Component}  from "@angular/core";
                 <!-- <h1> {{10+20+30}} </h1> -->
                 
                 <!-- using ternary operator
-                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> 
-                <img src='https://png.pngtree.com/element_our/sm/{{imagePath}}' />-->
+                <h1> {{ pageHeader ? pageHeader : 'No header'}} </h1> -->
+                <img src='https://png.pngtree.com/element_our/sm/{{imagePath}}' />
                 <h1> {{ getFullName()}} </h1> 
                 <my-employee></my-employee>
     
