@@ -27,6 +27,8 @@ import {Component}  from "@angular/core";
                 <button class="colorClass italicsClass boldClass" [class.boldClass]='applyBoldClass'>My Button</button>
                 <br/><br/>
                 <button class="colorClass" [ngClass]='addClasses()'>My Button</button>
+
+                          
                 </div>`
 })
 export class AppComponent {
